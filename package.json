@@ -2,9 +2,13 @@
   "name": "smbeye",
   "version": "1.0.0",
   "description": "file change listener for smb server",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc",
+    "build": "npm run tsc",
+    "install": "npm run tsc"
   },
   "repository": {
     "type": "git",
@@ -24,13 +28,11 @@
   },
   "homepage": "https://github.com/stefanwerfling/smbeye#readme",
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
-    "eslint": "^8.28.0",
+    "@types/node": "^18.16.13",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.41.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "tslib": "^2.4.1",
-    "tslint": "^6.1.3",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.5"
   }
 }
